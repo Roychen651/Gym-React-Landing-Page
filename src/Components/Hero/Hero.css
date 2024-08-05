@@ -11,6 +11,7 @@
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    z-index: 1;
 }
 .right-hero{
     flex:1;
@@ -189,4 +190,11 @@
 .calories>div>span:nth-of-type(2){
     font-size: 1.5rem;
     color: var(--lightgray);
+}
+
+
+.blur-h{
+    width: 22rem;
+    height: 30rem;
+    left:0;
 }

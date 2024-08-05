@@ -6,6 +6,7 @@ import white_tick from "../../assets/whiteTick.png";
 const Plans = () => {
   return (
     <div className="plans-container" id="plans">
+  
       <div className="programs-header">
         <span className="stroke-text">Ready To Start</span>
         <span>Your Journey</span>
