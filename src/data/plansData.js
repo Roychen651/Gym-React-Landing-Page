@@ -7,7 +7,7 @@ export const plansData = [
         viewBox="0 0 15 13"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* SVG path data */}
+        <path d="M14.5 0.5l-10 10-4-4" stroke="orange" strokeWidth="2" fill="none"/>
       </svg>
     ),
     name: "STARTER PLAN",
@@ -17,6 +17,7 @@ export const plansData = [
       "Free consultation with trainers",
       "Access to community support",
     ],
+    description: "Begin your fitness journey with our Starter Plan. Enjoy guided exercises and personalized support to help you get started. Perfect for newcomers!",
   },
   {
     icon: (
@@ -26,7 +27,7 @@ export const plansData = [
         viewBox="0 0 28 24"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* SVG path data */}
+        <path d="M14 2L28 24H0L14 2z" fill="white" stroke="white" />
       </svg>
     ),
     name: "ADVANCED PLAN",
@@ -36,6 +37,7 @@ export const plansData = [
       "Unlimited coach consultations",
       "Exclusive access to the minibar",
     ],
+    description: "Elevate your fitness routine with our Advanced Plan. Get more intensive workouts and unlimited access to our expert coaches. Take your training to the next level!",
   },
   {
     icon: (
@@ -45,7 +47,7 @@ export const plansData = [
         viewBox="0 0 16 15"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* SVG path data */}
+        <circle cx="8" cy="7.5" r="7" stroke="orange" strokeWidth="2" fill="orange"/>
       </svg>
     ),
     name: "ELITE PLAN",
@@ -55,5 +57,6 @@ export const plansData = [
       "Personal coaching sessions",
       "Complimentary fitness gear",
     ],
+    description: "Achieve elite fitness with our Elite Plan. Enjoy premium exercises, personal coaching, and exclusive fitness gear. Perfect for those who demand the best!",
   },
 ];
