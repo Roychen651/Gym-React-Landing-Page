@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Testimonials.css";
 import { testimonialsData } from "../../data/testimonialsData";
-import leftArrow from "../../assets/leftArrow.png";
-import rightArrow from "../../assets/rightArrow.png";
 import { motion } from "framer-motion";
 
 const Testimonials = () => {
@@ -14,8 +12,16 @@ const Testimonials = () => {
     duration: 0.5,
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedReview(prev => (prev === tLen - 1 ? 0 : prev + 1));
+    }, 3000); // Change testimonial every 3 seconds
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [tLen]);
+
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" id="testimonials">
       <div className="left-t">
         <span>Testimonials </span>
         <span className="stroke-text">What They </span>
@@ -54,26 +60,6 @@ const Testimonials = () => {
           src={testimonialsData[selectedReview].image}
           alt=""
         />
-        <div className="arrows">
-          <img
-            onClick={() => {
-              selectedReview === 0
-                ? setSelectedReview(tLen - 1)
-                : setSelectedReview(selectedReview - 1);
-            }}
-            src={leftArrow}
-            alt=""
-          />
-          <img
-            onClick={() => {
-              selectedReview === tLen - 1
-                ? setSelectedReview(0)
-                : setSelectedReview(selectedReview + 1);
-            }}
-            src={rightArrow}
-            alt=""
-          />
-        </div>
       </div>
     </div>
   );
