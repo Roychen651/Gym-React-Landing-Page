@@ -4,6 +4,7 @@ import './App.css';
 import Programs from './Components/Programs/Programs';
 import Reasons from './Components/Reasons/Reasons';
 import Plans from './Components/Plans/Plans';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Programs />
       <Reasons />
       <Plans />
+      <Testimonials />
     </div>
   );
 };

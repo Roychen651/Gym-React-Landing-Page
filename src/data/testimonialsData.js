@@ -6,21 +6,21 @@ export const testimonialsData = [
   {
     image: image1,
     review:
-      "Choosing Fitclub was the best decision I ever made. With the right plan and support, I've achieved my fitness goals!",
+      "Joining Roy's Gym was the best decision I've ever made. With the perfect plan and unwavering support, I've surpassed all my fitness goals and transformed my life!",
     name: 'MATHEW HENDRICKSON',
     status: 'ENTREPRENEUR',
   },
   {
     image: image2,
     review:
-      "The personalized coaching at Fitclub is top-notch. It's been a game-changer for my fitness journey.",
+      "Roy's Gym personalized coaching is unparalleled. It has completely revolutionized my fitness journey, helping me reach new heights and achieve extraordinary results.",
     name: 'JOHN KEVIN',
     status: 'FITNESS COACH',
   },
   {
     image: image3,
     review:
-      "Fitclub's programs have transformed my life. I've never felt more fit and healthy!",
+      "Roy's Gym comprehensive programs have truly transformed my life. I feel fitter, healthier, and more energetic than ever before. It's an experience I recommend to everyone!",
     name: 'FRANKLIN',
     status: 'SATISFIED CUSTOMER',
   },
